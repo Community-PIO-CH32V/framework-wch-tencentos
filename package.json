@@ -1,0 +1,7 @@
+{
+    "description": "TencentOS tiny is a real-time operating system developed by Tencent for the IoT field",
+    "name": "framework-wch-tencentos",
+    "system": "all",
+    "url": "https://github.com/OpenAtomFoundation/TencentOS-tiny",
+    "version": "2.20405.0"
+}
