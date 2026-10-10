@@ -54,7 +54,8 @@
 #define TOS_CFG_CPU_TICK_PER_SECOND 1000u
 
 
-#define TOS_CFG_CPU_CLOCK (SystemCoreClock)
+/* SysTick counts HCLK, which is half the core clock at 480 MHz */
+#define TOS_CFG_CPU_CLOCK (HCLKClock)
 
 
 #define TOS_CFG_TIMER_AS_PROC 1u
