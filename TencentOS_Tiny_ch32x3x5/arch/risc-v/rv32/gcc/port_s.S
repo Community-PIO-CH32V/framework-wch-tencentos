@@ -155,6 +155,10 @@ SW_Handler:
 	addi sp, sp, -128
 	sw   t0, __reg_x5_OFFSET(sp)
 
+	/* disable HPE */
+	li   t0, 0x20
+	csrs 0x804, t0
+
 	csrr t0, mstatus
 	sw   t0, __reg_mstatus_OFFSET(sp)
 	csrr t0, mepc
